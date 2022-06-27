@@ -1,0 +1,38 @@
+body{
+    background-color: #581845;
+}
+
+.heading{
+    color: #0b032d;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+    background-color: #f67e7d;
+    width: 40%;
+    height: 15%;
+    padding: 10px;
+    letter-spacing: 5px;
+    border-radius: 20px;
+}
+
+label{
+   color: #fbf8be;
+}
+
+span{
+    color: white;
+    font-size: 30px;
+}
+
+button{
+    background-color:#ffb997;
+    color: #0b032d;
+    width: 45%;
+    height: 4%;
+    border-radius: 10px;font-size: 18px;
+}
+
+#camera , #result{
+  width: 350px;
+  height: 300px; 
+}
+

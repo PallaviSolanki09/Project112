@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>HAND GESTURE WEB APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+  
+            <center>
+
+             <h3 class="heading">Hand Gesture App<br><br>
+              <span>&#128077;&#127995;</span>
+              <span>&#128076;&#127995;</span>
+              <span>&#9996;&#127995;</span>
+              <span>&#9994;&#127995;</span>
+              <span>&#128079;&#127995;</span>
+              <span>&#129304;&#127995;</span>
+             </h3>
+
+             <br><br>
+              <p style="color: fbf8be; font-size: 22px;">Take a selfie of a gesture to know about it's meaning
+                <p style="color:fbf8be;">On the following gestures the model is trained - </p>
+              </p><br><br>
+
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Webcam View - </label><br><br>
+              <div id="camera"></div>
+              <br><br>
+              <button onclick="take_snapshot()">Capture Image</button>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <span>&#128077;&#127995; |</span> 
+              <span>&#128076;&#127995; |</span>
+              <span>&#9996;&#127995;</span>
+                <br><br>
+                  <label>Prediction - </label>
+                <p style="font-size: 30px; color: #fbf8be;" class="gesture_name" id="result_gesture_name"></p>
+                <p style="font-size: 30px;" class="emoji" id="result_emoji"></p> 
+              </div>
+
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Snapshot - </label><br><br>
+              <div id="result"></div>
+              <br><br>
+              <button onclick="check()">Predict Gesture</button>
+            </div>
+            
+            </center>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
